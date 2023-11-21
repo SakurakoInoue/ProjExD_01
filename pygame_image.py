@@ -16,7 +16,6 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-            
         x = tmr%1600 #練習6　
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img, [1600-x, 0])
